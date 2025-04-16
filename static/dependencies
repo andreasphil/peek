@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source vendor/andreasphil/minipack@v0.4.0/pack
+
+# Add your dependencies here
+get_from_github andreasphil/minipack v0.4.0
+get_from_github andreasphil/design-system v0.46.0 "**/{*LICENSE*,dist/*,scripts/*}"

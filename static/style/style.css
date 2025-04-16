@@ -1,0 +1,58 @@
+@import url("../vendor/andreasphil/design-system@v0.46.0/dist/design-system.min.css")
+layer(theme);
+
+:root {
+  --block-spacing-y: 1.5rem;
+  --body-padding-y: clamp(64px, 2.991vw + 52.935px, 96px);
+  --h-margin-top: 2rem;
+  --line-height: 1.666;
+  --link-fg: var(--primary);
+  --link-hover-fg: var(--c-fg);
+  --theme-primary: 65% 0.18 240;
+  --theme-tint: 240;
+}
+
+p {
+  --block-spacing-y: 0.5lh;
+}
+
+:is(h2, h3, h4, h5, h6) {
+  border-top: var(--border-width) solid var(--c-border);
+  padding-top: 2rem;
+}
+
+/* Toolbar --------------------------------------------- */
+
+toolbar {
+  background: var(--c-surface-bg);
+  border-radius: var(--border-radius-large);
+  bottom: 1rem;
+  box-shadow: var(--shadow-elevation-high);
+  display: flex;
+  left: 50%;
+  position: fixed;
+  translate: -50% 0;
+
+  section {
+    align-items: center;
+    display: flex;
+    padding: 0.5rem;
+
+    & + & {
+      border-left: var(--border-width) solid var(--c-border-variant);
+    }
+  }
+
+  select {
+    width: 14rem;
+  }
+}
+
+select {
+  background-color: var(--c-surface-bg);
+  border-color: transparent;
+
+  &:hover {
+    background-color: var(--c-surface-variant-bg);
+  }
+}
