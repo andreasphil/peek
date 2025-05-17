@@ -1,4 +1,4 @@
-@import url("../vendor/andreasphil/design-system@v0.46.0/dist/design-system.min.css")
+@import url("/static/external/andreasphil/design-system@v0.46.0/dist/design-system.min.css")
 layer(theme);
 
 :root {

@@ -6,7 +6,7 @@
     "module": "es2022",
     "paths": {
       "@/*": ["./static/scripts/*"],
-      "@vendor/*": ["./static/vendor/*"]
+      "@external/*": ["./static/external/*"]
     }
   }
 }
