@@ -1,6 +1,8 @@
 @import url("/static/external/andreasphil/design-system@v0.46.0/dist/design-system.min.css")
 layer(theme);
 
+@import url("/static/style/highlight.css");
+
 :root {
   --block-spacing-y: 1.5rem;
   --body-padding-y: clamp(64px, 2.991vw + 52.935px, 96px);
@@ -8,7 +10,6 @@ layer(theme);
   --line-height: 1.666;
   --link-fg: var(--primary);
   --link-hover-fg: var(--c-fg);
-  --theme-primary: 65% 0.18 240;
   --theme-tint: 240;
 }
 

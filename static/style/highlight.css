@@ -1,0 +1,71 @@
+:root {
+  /* Colors from https://github.com/NeverCease/uchu */
+
+  /*** gray ***/
+  --uchu-gray-3: oklch(88.28% 0.003 286.34);
+  --uchu-gray-5: oklch(80.73% 0.002 247.84);
+
+  /*** red ***/
+  --uchu-red-3: oklch(69.86% 0.162 7.82);
+  --uchu-red-5: oklch(58.63% 0.231 19.6);
+
+  /*** purple ***/
+  --uchu-purple-3: oklch(68.5% 0.136 303.78);
+  --uchu-purple-5: oklch(49.39% 0.215 298.31);
+
+  /*** blue ***/
+  --uchu-blue-3: oklch(70.94% 0.136 258.06);
+  --uchu-blue-5: oklch(54.87% 0.222 260.33);
+
+  /*** teal ***/
+  --uchu-teal-3: oklch(70.94% 0.136 196.02);
+  --uchu-teal-5: oklch(54.87% 0.222 196.02);
+
+  /*** green ***/
+  --uchu-green-3: oklch(83.74% 0.139 146.57);
+  --uchu-green-5: oklch(75.23% 0.209 144.64);
+
+  /*** orange ***/
+  --uchu-orange-3: oklch(83.56% 0.10753627570574478 56.492594564236946);
+  --uchu-orange-5: oklch(74.61% 0.171 51.56);
+
+  --blue: light-dark(var(--uchu-blue-5), var(--uchu-blue-3));
+  --gray: light-dark(var(--uchu-gray-5), var(--uchu-gray-3));
+  --green: light-dark(var(--uchu-green-5), var(--uchu-green-3));
+  --orange: light-dark(var(--uchu-orange-5), var(--uchu-orange-3));
+  --purple: light-dark(var(--uchu-purple-5), var(--uchu-purple-3));
+  --red: light-dark(var(--uchu-red-5), var(--uchu-red-3));
+  --teal: light-dark(var(--uchu-teal-5), var(--uchu-teal-3));
+}
+
+:is(.shj-numbers) {
+  display: none;
+}
+
+:is(.shj-syn-err, .shj-syn-deleted) {
+  color: var(--red);
+}
+
+.shj-syn-kwd {
+  color: var(--purple);
+}
+
+.shj-syn-func {
+  color: var(--blue);
+}
+
+.shj-syn-cmnt {
+  color: var(--gray);
+}
+
+:is(.shj-syn-insert, .shj-syn-str) {
+  color: var(--green);
+}
+
+:is(.shj-syn-bool, .shj-syn-num) {
+  color: var(--orange);
+}
+
+.shj-syn-class {
+  color: var(--teal);
+}

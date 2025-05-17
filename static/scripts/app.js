@@ -1,6 +1,19 @@
 import { useThemeColor } from "@external/andreasphil/design-system@v0.46.0/scripts/utils.js";
+import { highlightElement } from "@external/@speed-highlight/core@1.2.7/dist/index.js";
 
 useThemeColor();
+
+// Syntax highlighting ------------------------------------
+
+const codeBlockEls = document.querySelectorAll("pre");
+codeBlockEls.forEach((el) => {
+  const codeEl = el.querySelector("code[class|=language]");
+  const lang = codeEl.className.match(/language-([\w-]+)/)?.[1];
+
+  if (lang) {
+    highlightElement(el, lang, "multiline", { hideLineNumbers: true });
+  }
+});
 
 // Table of Contents --------------------------------------
 
