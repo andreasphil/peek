@@ -19,7 +19,9 @@
 
 ## Installation
 
-> 🚧 TODO: Installation instructions
+```sh
+go install github.com/andreasphil/peek@latest
+```
 
 ## Usage
 
