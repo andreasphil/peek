@@ -1,4 +1,4 @@
-@import url("/static/external/andreasphil/design-system@v0.46.0/dist/design-system.min.css")
+@import url("/static/external/andreasphil/design-system@v0.49.0/dist/design-system.min.css")
 layer(theme);
 
 @import url("/static/style/highlight.css");
@@ -6,10 +6,9 @@ layer(theme);
 :root {
   --block-spacing-y: 1.5rem;
   --body-padding-y: clamp(64px, 2.991vw + 52.935px, 96px);
-  --h-margin-top: 2rem;
   --line-height: 1.666;
-  --link-fg: var(--primary);
-  --link-hover-fg: var(--c-fg);
+  --c-link: var(--primary);
+  --c-link-hover: var(--c-fg);
   --theme-tint: 240;
 }
 
@@ -19,12 +18,13 @@ p {
 
 :is(h2, h3, h4, h5, h6) {
   border-top: var(--border-width) solid var(--c-border);
+  margin-top: 2rem;
   padding-top: 2rem;
 }
 
 /* Toolbar --------------------------------------------- */
 
-toolbar {
+.toolbar {
   background: var(--c-surface-bg);
   border-radius: var(--border-radius-large);
   bottom: 1rem;
