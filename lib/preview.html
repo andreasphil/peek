@@ -25,15 +25,15 @@
   </head>
 
   <body>
-    <main id="content" data-trim="both">{{ .Content }}</main>
+    <main id="content" class="trim">{{ .Content }}</main>
 
     <div class="toolbar">
       <section>
         <select id="toc-select" value=""></select>
       </section>
       <section>
-        <button id="copy-button" data-variant="muted">
-          <span data-hidden>Copy</span>
+        <button id="copy-button" variant="muted">
+          <span class="visually-hidden">Copy</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -53,8 +53,8 @@
           </svg>
         </button>
 
-        <button id="share-button" data-variant="muted">
-          <span data-hidden="true">Teilen</span>
+        <button id="share-button" variant="muted">
+          <span class="visually-hidden">Teilen</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
