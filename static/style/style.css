@@ -1,19 +1,16 @@
-@import url("/static/external/andreasphil/design-system@v0.49.0/dist/design-system.min.css")
+@import url("/static/external/andreasphil/design-system@v0.52.0/dist/design-system.min.css")
 layer(theme);
 
 @import url("/static/style/highlight.css");
 
 :root {
-  --block-spacing-y: 1.5rem;
-  --body-padding-y: clamp(64px, 2.991vw + 52.935px, 96px);
-  --line-height: 1.666;
+  --outer-spacing-y: 1.5rem;
   --c-link: var(--primary);
   --c-link-hover: var(--c-fg);
-  --theme-tint: 240;
 }
 
 p {
-  --block-spacing-y: 0.5lh;
+  --outer-spacing-y: 0.5lh;
 }
 
 :is(h2, h3, h4, h5, h6) {
