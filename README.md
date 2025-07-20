@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <strong>Lightweight markdown preview</strong>
+  <strong>Markdown preview</strong>
 </p>
 
 > [!NOTE]
